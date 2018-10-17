@@ -3,13 +3,18 @@
 Jerry's games
 '''
 import map
+import actor_lines as al
 from roles import Hero
 
-print(map.east)
+# 欢迎词
+print(al.welcome)
+
+# 故事背景
+print(al.background)
 
 # 创建角色Jerry
-hero=Hero('Jerry', '男', 9)
+Jerry=Hero('Jerry', '男', 9)
 
 
-hero.detail()
-hero.look(hero)
+Jerry.detail()
+Jerry.look(Jerry)
